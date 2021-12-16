@@ -18,12 +18,9 @@
 char *args[] = {};
 char rc[5000];
 char d[500];
-char *username;
-
-
+char username[256];
 
 int cansh(void) {
-	username=(char *)malloc(10*sizeof(char));
 	cuserid(username);
 	
 	strcpy(rc, "\e[32m");
@@ -90,9 +87,11 @@ int main(void) {
 		} else if (strcmp("cansh", args[0]) == 0) {
 			printf("CANSH\nVersion: 1.0\n");
 		} else if (strcmp("exit", args[0]) == 0) {
-			return 0;
+			exit(1);
 		} else {
 			launch();
 		}
+
+		free(input);
 	}
 }
