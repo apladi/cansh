@@ -1,16 +1,3 @@
-/***********************************************/
-/*                 CANSH SHELL                 */
-/***********************************************/
-/*   CREATED WITH PARTIAL HELP FROM MESYETI:   */
-/*         https://github.com/MESYETI/         */
-/*                                             */
-/*    MEMORY LEAKS FIXED BY LORD OF TRIDENT:   */
-/*      https://github.com/LordOfTrident/      */
-/*                                             */
-/*       https://github.com/apladi/cansh       */
-/***********************************************/
-
-
 #include <stdio.h>
 #include <stdlib.h>
 #include <string.h>
